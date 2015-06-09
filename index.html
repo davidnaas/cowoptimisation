@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Optimise your cowzz!</title>
+</head>
+<body>
+	<form class='priceForm' id="cuttingPriceform">
+			
+
+	</form>
+
+	<form class='priceForm' id="plankPriceForm">
+				
+	</form>
+
+	<form id='searchform'>
+			<p>Input cutting price (Empty defaults to example price)</p>
+			<input class="searchField"  type="text" name="searchfield" placeholder="5" value="">
+			
+			<p>Input plank price (Empty defaults to example price)</p>
+			<input class="searchField"  type="text" name="searchfield" placeholder="1.5" value="">	
+
+			<p>Input comma separated list of ones and zeros describing your shed (Empty defaults to example shed) </p>
+			<input class="searchField"  type="text" name="searchfield" placeholder="1,1,1,0,1,1,0,0,1,1,0,1" value="">
+
+			<button type="submit" class="optimiseButton" style="">
+				Optimizzzze!
+			</button>		
+	</form>
+
+	<div id="result">
+		<h1>Minimised price is:</h1>	
+		<p id="priceResult"></p>
+	</div>
+
+
+	<script src="bower_components/jquery/dist/jquery.min.js" ></script>
+	<script src="solution.js" ></script>
+	<script src="app.js" ></script>
+</body>
+</html>
